@@ -1,0 +1,32 @@
+/*
+* Minimal
+*
+* @author: Philippe Wronski
+* Licence WTFPL http://www.wtfpl.net/
+*/
+
+/* ----------------------------- */
+/* ==Table Of Content            */
+/* ----------------------------- */
+
+/* 1- Base (basic styles) */
+/* 2- Print (print quick reset) */
+/* 3- Media component */
+/* 4- Buttons component */
+/* 5- Helpers (width and spacers helpers) */
+
+// @import "variables";
+// You should uncomment this following line if you want to override STACSS breakpoints.
+// @import "breakpoints";
+
+// Base
+// @import "base"; // basic styles
+// You should uncomment this following line if you want to override STACSS print styles.
+// @import "print"; // print quick reset
+
+// Components
+// @import "components/media.scss"; // media object
+// @import "components/buttons"; // button consistency
+
+// Utilities
+// @import "utilities/helpers.scss"; // width and spacers helpers

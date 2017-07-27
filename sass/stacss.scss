@@ -16,8 +16,8 @@
 /* 5- Misc (skip links, hyphens) */
 /* 6- Tables (data tables consistency) */
 /* 7- Forms (forms consistency) */
-/* 8- Media object */
-/* 9- Autogrid object */
+/* 8- Media component */
+/* 9- Autogrid component */
 /* 10- Global Layout (alignment, modules, positionning) */
 /* 11- Helpers (width and spacers helpers) */
 /* 13- Responsive (Responsive Web Design helpers) */
@@ -36,11 +36,11 @@
 
 // Libraries
 @import "library/base"; // basic styles
-@import "library/print.scss"; // print quick reset
-@import "library/misc.scss"; // skip links, hyphens
-@import "library/tables.scss"; // data tables consistency
-@import "library/buttons.scss"; // button consistency
-@import "library/forms.scss"; // forms consistency
+@import "library/print"; // print quick reset
+@import "library/misc"; // skip links, hyphens
+@import "library/tables"; // data tables consistency
+@import "library/buttons"; // button consistency
+@import "library/forms"; // forms consistency
 
 // Components
 // @import "components/media.scss"; // media object
@@ -52,10 +52,5 @@
 // // @import "utilities/_wordpress.scss"; // WordPress reset and basic styles
 // @import "utilities/responsive.scss"; // Responsive Web Design helpers
 
-/* ----------------------------- */
-/* ==Own stylesheet              */
-/* ----------------------------- */
-
-/* Here should go your own CSS styles */
-// You can also link them with a Sass @import
-// @import "my-styles";
+// Theme
+@import "themes/theme";

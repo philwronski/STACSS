@@ -1,0 +1,33 @@
+/* ----------------------------- */
+/* ==Theme stylesheet            */
+/* ----------------------------- */
+
+/* Here should go your own CSS styles */
+// You can also link them with a Sass @import
+// @import "my-styles";
+
+@import "minimal/minimal";
+// @import "material/material";
+// @import "light/light";
+// @import "dark/dark";
+
+/*
+ * You can import theme dynamicaly.
+ * 1. Create variables
+ *      $theme-default: minimal;
+ *      $theme-actived: minimal;
+ * 2. Uncomment these following lines
+ *      html {
+ *          @if variable_exists(theme-actived) and $theme-actived != $theme-default {
+ *              @include set-theme($theme-actived);
+ *          } @else {
+ *              @include set-theme($theme-default);
+ *          }
+ *      }
+ * 3. Create theme like this
+ *      %minimal {
+ *          body {
+ *              color: #333;
+ *          }
+ *      }
+ */

@@ -912,6 +912,33 @@ textarea {
 /* select { -webkit-appearance: none; } */
 /* 'x' appears on right of search input when text is entered. This removes it */
 /* ----------------------------- */
-/* ==Own stylesheet              */
+/* ==Theme stylesheet            */
 /* ----------------------------- */
 /* Here should go your own CSS styles */
+/* ----------------------------- */
+/* ==Minimal                     */
+/* ----------------------------- */
+body {
+  background-color: red;
+}
+
+/*
+ * You can import theme dynamicaly.
+ * 1. Create variables
+ *      $theme-default: minimal;
+ *      $theme-actived: minimal;
+ * 2. Uncomment these following lines
+ *      html {
+ *          @if variable_exists(theme-actived) and $theme-actived != $theme-default {
+ *              @include set-theme($theme-actived);
+ *          } @else {
+ *              @include set-theme($theme-default);
+ *          }
+ *      }
+ * 3. Create theme like this
+ *      %minimal {
+ *          body {
+ *              color: #333;
+ *          }
+ *      }
+ */
