@@ -14,8 +14,8 @@
 /* 5- Misc (skip links, hyphens) */
 /* 6- Tables (data tables consistency) */
 /* 7- Forms (forms consistency) */
-/* 8- Media object */
-/* 9- Autogrid object */
+/* 8- Media component */
+/* 9- Autogrid component */
 /* 10- Global Layout (alignment, modules, positionning) */
 /* 11- Helpers (width and spacers helpers) */
 /* 13- Responsive (Responsive Web Design helpers) */
@@ -915,13 +915,20 @@ textarea {
 /* ==Theme stylesheet            */
 /* ----------------------------- */
 /* Here should go your own CSS styles */
+/*
+* Minimal
+*
+* @author: Philippe Wronski
+* Licence WTFPL http://www.wtfpl.net/
+*/
 /* ----------------------------- */
-/* ==Minimal                     */
+/* ==Table Of Content            */
 /* ----------------------------- */
-body {
-  background-color: red;
-}
-
+/* 1- Base (basic styles) */
+/* 2- Print (print quick reset) */
+/* 3- Media component */
+/* 4- Buttons component */
+/* 5- Helpers (width and spacers helpers) */
 /*
  * You can import theme dynamicaly.
  * 1. Create variables
