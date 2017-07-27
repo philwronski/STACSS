@@ -54,6 +54,8 @@ $ultra-large-spacing      : 16rem !default; // ultra large value for margins / p
 $ultra-large-plus-spacing : 20rem !default; // ultra large value for margins / paddings
 
 // Buttons
-$btn-default-color          : $gray-light;
-$btn-default-bg             : $gray-ultra-light;
-$btn-default-border-color   : transparent;
+$btn-bg             : transparent;
+$btn-border-color   : transparent;
+// $btn-default-color          : $gray-light;
+// $btn-default-bg             : $gray-ultra-light;
+// $btn-default-border-color   : transparent;

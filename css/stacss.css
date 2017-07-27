@@ -798,16 +798,16 @@ table,
   margin-bottom: 2rem;
 }
 
-.table {
-  display: table;
-}
-
 td,
 th {
   text-align: left;
   min-width: 2rem;
   cursor: default;
   padding: 0.5rem 0.625rem 0.625rem;
+}
+
+.table {
+  display: table;
 }
 
 .table-row {
@@ -856,34 +856,61 @@ button,
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  color: #777777;
-  background-color: #eeeeee;
+  background-color: transparent;
   outline: 0;
-}
-
-button:hover, button:focus, button:active,
-.btn:hover,
-.btn:focus,
-.btn:active {
-  background-color: #d5d5d5;
-  color: #555555;
 }
 
 a.btn {
   text-decoration: none;
 }
 
-.btn-o {
-  background-color: transparent;
-  border: 1px solid #777777;
+/* ----------------------------- */
+/* ==Forms                       */
+/* ----------------------------- */
+/* forms items */
+form,
+fieldset {
+  border: none;
 }
 
-.btn-o:hover, .btn-o:focus, .btn-o:active {
-  background-color: transparent;
-  border-color: #555555;
-  color: #555555;
+input,
+button,
+select,
+label,
+.btn {
+  font-family: inherit;
+  font-size: inherit;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: #333333;
+}
+
+label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+legend {
+  border: 0;
+  white-space: normal;
+}
+
+textarea {
+  min-height: 5em;
+  vertical-align: top;
+  font-family: inherit;
+  font-size: inherit;
+  resize: vertical;
+}
+
+/* if select styling bugs on WebKit */
+/* select { -webkit-appearance: none; } */
+/* 'x' appears on right of search input when text is entered. This removes it */
 /* ----------------------------- */
 /* ==Own stylesheet              */
 /* ----------------------------- */

@@ -12,16 +12,16 @@ table,
   margin-bottom: $medium-spacing;
 }
 
-.#{$sta-namespace}table {
-  display: table;
-}
-
 td,
 th {
   text-align: left;
   min-width: $medium-spacing;
   cursor: default;
   padding: 0.5rem 0.625rem 0.625rem;
+}
+
+.#{$sta-namespace}table {
+  display: table;
 }
 
 .#{$sta-namespace}table-row {

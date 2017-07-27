@@ -10,7 +10,7 @@ button,
     font-family: inherit;
     padding: 0.85em 1em;
     -webkit-appearance: none;
-    border: 1px solid transparent;
+    border: 1px solid $btn-border-color;
     border-radius: 0;
     -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
@@ -18,31 +18,33 @@ button,
     line-height: 1;
     text-align: center;
     cursor: pointer;
-    color: $gray-light;
-    background-color: $gray-ultra-light;
+    background-color: $btn-bg;
+    // color: $gray-light;
+    // background-color: $gray-ultra-light;
     outline: 0;
 
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: $gray-extra-light;
-        color: $gray;
-    }
+    // &:hover,
+    // &:focus,
+    // &:active {
+    //     background-color: $gray-extra-light;
+    //     color: $gray;
+    // }
+
 }
 
 a.btn {
     text-decoration: none;
 }
 
-.btn-o {
-    background-color: transparent;
-    border: 1px solid $gray-light;
+// .btn-o {
+    // background-color: transparent;
+    // border: 1px solid $gray-light;
 
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: transparent;
-        border-color: $gray;
-        color: $gray;
-    }
-}
+    // &:hover,
+    // &:focus,
+    // &:active {
+    //     background-color: transparent;
+    //     border-color: $gray;
+    //     color: $gray;
+    // }
+// }
