@@ -1,0 +1,53 @@
+/* ----------------------------- */
+/* ==Tables                      */
+/* ----------------------------- */
+
+table,
+.#{$sta-namespace}table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  vertical-align: top;
+  margin-bottom: $medium-spacing;
+}
+
+.#{$sta-namespace}table {
+  display: table;
+}
+
+td,
+th {
+  text-align: left;
+  min-width: $medium-spacing;
+  cursor: default;
+  padding: 0.5rem 0.625rem 0.625rem;
+}
+
+.#{$sta-namespace}table-row {
+    display: table-row;
+}
+
+.#{$sta-namespace}table-cell {
+    display: table-cell;
+    text-align: left;
+    min-width: $medium-spacing;
+    cursor: default;
+    padding: 0.5rem 0.625rem 0.625rem;
+}
+
+.#{$sta-namespace}table-header {
+    display: table-header-group;
+
+    .#{$sta-namespace}table-cell {
+        font-weight: bold;
+    }
+}
+
+.#{$sta-namespace}table-footer {
+    display: table-footer-group;
+
+    .#{$sta-namespace}table-cell {
+        font-weight: bold;
+    }
+}

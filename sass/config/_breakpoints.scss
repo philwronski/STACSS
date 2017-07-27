@@ -1,0 +1,11 @@
+// Responsive breakpoint variables
+
+// Warning : you should use your own values, regardless of the devices
+// Best practise : (max-width: ($BP - 1)) and (min-width: $BP)
+
+$tiny-screen        : 480px !default;
+$small-screen       : 576px !default;
+$medium-screen      : 768px !default;
+$large-screen       : 992px !default;
+$extra-large-screen : 1200px !default;
+$ultra-large-screen : 1600px !default;

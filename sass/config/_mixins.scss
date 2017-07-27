@@ -1,0 +1,32 @@
+// Additionnal "utility" breakpoints aliases
+// ex. @include respond-to("medium-up") {...}
+$bp-aliases: (
+  'tiny'   : (max-width: #{$tiny-screen - 1}),
+  'small'  : (max-width: #{$small-screen - 1}),
+  'medium' : (max-width: #{$medium-screen - 1}),
+  'large' : (max-width: #{$large-screen - 1}),
+  'extra-large'  : (max-width: #{$extra-large-screen - 1}),
+  'tiny-up'   : (min-width: #{$tiny-screen}),
+  'small-up'  : (min-width: #{$small-screen}),
+  'medium-up' : (min-width: #{$medium-screen}),
+  'large-up' : (min-width: #{$large-screen}),
+  'extra-large-up' : (min-width: #{$extra-large-screen}),
+  'retina' : (min-resolution: 2dppx)
+);
+
+// Source : https://www.sitepoint.com/managing-responsive-breakpoints-sass/
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($bp-aliases, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($bp-aliases, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
