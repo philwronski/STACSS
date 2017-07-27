@@ -1,0 +1,27 @@
+/* ----------------------------- */
+/* ==Autogrid                    */
+/* ----------------------------- */
+
+@media (min-width: $small) {
+  [class^="autogrid"],
+  [class*=" autogrid"] {
+    display: flex;
+  }
+
+  [class^="autogrid"] > *,
+  [class*=" autogrid"] > * {
+    flex: 1;
+    min-width: 0; /* avoid min-width:auto */
+  }
+}
+
+/* Autogrid variants */
+@media (min-width: $small) {
+  .has-gutter > *:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  [class*="--reverse"] {
+    flex-direction: row-reverse;
+  }
+}
