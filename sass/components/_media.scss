@@ -1,0 +1,26 @@
+/* ----------------------------- */
+/* ==Media                       */
+/* ----------------------------- */
+
+@media (min-width: $small) {
+  .media {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .media-content {
+    flex: 1;
+    min-width: 0; /* avoid min-width:auto */
+  }
+}
+
+/* Media variants */
+@media (min-width: $small) {
+  .media--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .media-figure--center {
+    align-self: center;
+  }
+}

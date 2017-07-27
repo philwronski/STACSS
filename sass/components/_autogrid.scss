@@ -2,7 +2,7 @@
 /* ==Autogrid                    */
 /* ----------------------------- */
 
-@media (min-width: $small) {
+@media (min-width: $small-screen) {
   [class^="autogrid"],
   [class*=" autogrid"] {
     display: flex;
@@ -16,7 +16,7 @@
 }
 
 /* Autogrid variants */
-@media (min-width: $small) {
+@media (min-width: $small-screen) {
   .has-gutter > *:not(:first-child) {
     margin-left: 1rem;
   }
