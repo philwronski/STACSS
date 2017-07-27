@@ -24,4 +24,10 @@
   [class*="--reverse"] {
     flex-direction: row-reverse;
   }
+
+  @for $i from 2 through 11 {
+      .autogrid-cell-#{$i} {
+          flex: $i;
+      }
+  }
 }
