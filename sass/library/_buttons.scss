@@ -27,3 +27,8 @@ a.btn {
 }
 
 @include btn-sizes();
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
