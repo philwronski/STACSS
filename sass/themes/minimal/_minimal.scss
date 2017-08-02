@@ -15,15 +15,16 @@
 /* 4- Buttons component */
 /* 5- Helpers (width and spacers helpers) */
 
-// @import "variables";
+@import "config/variables";
 // You should uncomment this following line if you want to override STACSS breakpoints.
-// @import "breakpoints";
+// @import "config/breakpoints";
+@import "config/mixins";
 
 // Base
 @import "base"; // basic styles
-@import "buttons"; // Buttons styles
 // You should uncomment this following line if you want to override STACSS print styles.
 // @import "print"; // print quick reset
+@import "buttons"; // Buttons styles
 
 // Components
 // @import "components/media.scss"; // media object

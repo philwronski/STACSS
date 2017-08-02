@@ -34,3 +34,26 @@ $bp-aliases: (
 @mixin set-theme($theme) {
     @extend %#{$theme};
 }
+
+$btn-sizes: (
+  'tiny'        : (padding: $btn-padding-tiny, font-size: $btn-font-tiny),
+  'small'       : (padding: $btn-padding-small),
+  'large'       : (padding: $btn-padding-large, font-size: $btn-font-large),
+  'extra-large' : (padding: $btn-padding-extra-large, font-size: $btn-font-extra-large),
+  'ultra-large' : (padding: $btn-padding-ultra-large, font-size: $btn-font-ultra-large)
+);
+
+@mixin btn-size($padding, $font-size: null) {
+  padding: $padding;
+  @if variable_exists(font-size) {
+    font-size: $font-size;
+  }
+}
+
+@mixin btn-sizes {
+  @each $size, $properties in $btn-sizes {
+    .btn--#{$size} {
+      @include btn-size($properties...);
+    }
+  }
+}

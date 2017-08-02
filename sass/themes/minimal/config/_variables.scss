@@ -1,0 +1,62 @@
+// Theme namespace
+$minimal-namespace: "minimal-";
+
+// Colors
+$color-primary      : darken(#428bca, 6.5%) !default; // #337ab7
+$color-info         : #5bc0de !default;
+$color-success      : #5cb85c !default;
+$color-warning      : #f0ad4e !default;
+$color-danger       : #d9534f !default;
+
+// Buttons
+$btn-default-color          : $gray-light;
+$btn-default-bg             : $gray-ultra-light;
+$btn-default-border-color   : transparent;
+
+$btn-color  : #fff;
+
+$btn-primary-color          : $btn-color;
+$btn-primary-bg             : $color-primary;
+$btn-primary-border-color   : transparent;
+
+$btn-info-color          : $btn-color;
+$btn-info-bg             : $color-info;
+$btn-info-border-color   : transparent;
+
+$btn-success-color          : $btn-color;
+$btn-success-bg             : $color-success;
+$btn-success-border-color   : transparent;
+
+$btn-warning-color          : $btn-color;
+$btn-warning-bg             : $color-warning;
+$btn-warning-border-color   : transparent;
+
+$btn-danger-color          : $btn-color;
+$btn-danger-bg             : $color-danger;
+$btn-danger-border-color   : transparent;
+
+// Buttons outlined
+$btn-o-default-bg                   : transparent;
+$btn-o-default-border-color         : $gray-light;
+
+$btn-o-bg   : transparent;
+
+$btn-o-primary-color          : $color-primary;
+$btn-o-primary-bg             : $btn-o-bg;
+$btn-o-primary-border-color   : $color-primary;
+
+$btn-o-info-color          : $color-info;
+$btn-o-info-bg             : $btn-o-bg;
+$btn-o-info-border-color   : $color-info;
+
+$btn-o-success-color          : $color-success;
+$btn-o-success-bg             : $btn-o-bg;
+$btn-o-success-border-color   : $color-success;
+
+$btn-o-warning-color          : $color-warning;
+$btn-o-warning-bg             : $btn-o-bg;
+$btn-o-warning-border-color   : $color-warning;
+
+$btn-o-danger-color          : $color-danger;
+$btn-o-danger-bg             : $btn-o-bg;
+$btn-o-danger-border-color   : $color-danger;

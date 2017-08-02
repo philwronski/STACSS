@@ -6,11 +6,6 @@
 // You can also link them with a Sass @import
 // @import "my-styles";
 
-@import "minimal/minimal";
-// @import "material/material";
-// @import "light/light";
-// @import "dark/dark";
-
 /*
  * You can import theme dynamicaly.
  * 1. Create variables
@@ -31,3 +26,8 @@
  *          }
  *      }
  */
+
+@import "minimal/minimal";
+// @import "material/material";
+// @import "light/light";
+// @import "dark/dark";

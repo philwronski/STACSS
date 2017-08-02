@@ -32,13 +32,6 @@ $bg-base        : #fff;
 $color-base     : $gray-dark;
 $color-link     : $color-base;
 
-// @todo change colors
-$color-primary  : darken(#428bca, 6.5%) !default; // #337ab7
-$color-success  : #5cb85c !default;
-$color-info     : #5bc0de !default;
-$color-warning  : #f0ad4e !default;
-$color-danger   : #d9534f !default;
-
 // spacings
 $tiny-spacing             : .5rem !default; // tiny value for margins / paddings
 $tiny-plus-spacing        : .7rem !default; // tiny+ value for margins / paddings
@@ -56,6 +49,17 @@ $ultra-large-plus-spacing : 20rem !default; // ultra large value for margins / p
 // Buttons
 $btn-bg             : transparent;
 $btn-border-color   : transparent;
-// $btn-default-color          : $gray-light;
-// $btn-default-bg             : $gray-ultra-light;
-// $btn-default-border-color   : transparent;
+
+$btn-padding-tiny           : 0.25em 0.4em;
+$btn-font-tiny              : 1.2rem;
+
+$btn-padding-small          : 0.45em 0.6em;
+
+$btn-padding-large          : 1.05em 1.2em;
+$btn-font-large             : 1.8rem;
+
+$btn-padding-extra-large    : 1.15em 1.3em;
+$btn-font-extra-large       : 2rem;
+
+$btn-padding-ultra-large    : 1.25em 1.4em;
+$btn-font-ultra-large       : 2.2rem;

@@ -1,0 +1,74 @@
+/* ----------------------------- */
+/* ==Buttons Mixins              */
+/* ----------------------------- */
+
+// Plain buttons
+$btn-states: (
+  'default'     : (color: $btn-default-color, bg: $btn-default-bg, border: $btn-default-border-color),
+  'primary'     : (color: $btn-primary-color, bg: $btn-primary-bg, border: $btn-primary-border-color),
+  'info'        : (color: $btn-info-color, bg: $btn-info-bg, border: $btn-info-border-color),
+  'success'     : (color: $btn-success-color, bg: $btn-success-bg, border: $btn-success-border-color),
+  'warning'     : (color: $btn-warning-color, bg: $btn-warning-bg, border: $btn-warning-border-color),
+  'danger'      : (color: $btn-danger-color, bg: $btn-danger-bg, border: $btn-danger-border-color)
+);
+
+@mixin minimal-btn-state($state, $color, $bg, $border) {
+    color: $color;
+    background-color: $bg;
+    border-color: $border;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: darken($bg, 10%);
+        @if $state == 'default' {
+            color: darken($color, 13.2%);
+        }
+    }
+
+}
+
+@mixin minimal-btn {
+    @each $state, $colors in $btn-states {
+       .btn--#{$state} {
+            @include minimal-btn-state($state, $colors...);
+        } 
+    }
+}
+
+// Outlined buttons
+$btn-o-states: (
+  'default'     : (color: $btn-default-color, bg: $btn-o-default-bg, border: $btn-o-default-border-color),
+  'primary'     : (color: $btn-o-primary-color, bg: $btn-o-primary-bg, border: $btn-o-primary-border-color),
+  'info'        : (color: $btn-o-info-color, bg: $btn-o-info-bg, border: $btn-o-info-border-color),
+  'success'     : (color: $btn-o-success-color, bg: $btn-o-success-bg, border: $btn-o-success-border-color),
+  'warning'     : (color: $btn-o-warning-color, bg: $btn-o-warning-bg, border: $btn-o-warning-border-color),
+  'danger'      : (color: $btn-o-danger-color, bg: $btn-o-danger-bg, border: $btn-o-danger-border-color)
+);
+
+@mixin minimal-btn-o-state($color, $bg, $border) {
+    color: $color;
+    background-color: $bg;
+    border: 1px solid $border;
+
+    &:hover,
+    &:focus,
+    &:active {
+        // background-color: $bg ;
+        // border-color: darken($border, 13.2%);
+        // color: darken($color, 13.2%);
+        border-color: transparent;
+        color: #fff;
+        background-color: $color;
+
+    }
+
+}
+
+@mixin minimal-btn-o {
+    @each $state, $colors in $btn-o-states {
+       .btn-o--#{$state} {
+            @include minimal-btn-o-state($colors...);
+        } 
+    }
+}

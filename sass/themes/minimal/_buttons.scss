@@ -2,29 +2,6 @@
 /* ==Buttons                     */
 /* ----------------------------- */
 
-button,
-.btn {
-    color: $gray-light;
-    background-color: $gray-ultra-light;
-
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: $gray-extra-light;
-        color: $gray;
-    }
-
-}
-
-.btn-o {
-    background-color: transparent;
-    border: 1px solid $gray-light;
-
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: transparent;
-        border-color: $gray;
-        color: $gray;
-    }
-}
+@include minimal-btn();
+@include minimal-btn-o();
+@include btn-sizes();
