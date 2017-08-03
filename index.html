@@ -9,7 +9,7 @@
 
         <link rel="stylesheet" href="css/stacss.css">
     </head>
-    <body>
+    <body style="padding: 20px">
         <ul>
             <li>test</li>
             <li>test</li>
@@ -44,7 +44,7 @@
         <p id="test3">Fugit saepe ab, incidunt qui quam id magni veniam, eos nesciunt, non rem aliquid quasi recusandae iusto obcaecati corporis, eveniet consequuntur ea? Perferendis nostrum similique exercitationem sapiente fuga illo, minus.</p>
 
         <h4>Without thead and tbody</h4>
-        <table>
+        <table class="table">
             <tr>
                 <th>col1</th>
                 <th>col2</th>
@@ -76,8 +76,76 @@
                 <td>content4</td>
             </tr>
         </table>
+        <table class="table table--bordered">
+            <tr>
+                <th>col1</th>
+                <th>col2</th>
+                <th>col3</th>
+                <th>col4</th>
+            </tr>
+            <tr>
+                <td>content1</td>
+                <td>content2</td>
+                <td>content3</td>
+                <td>content4</td>
+            </tr>
+            <tr>
+                <td>content1</td>
+                <td>content2</td>
+                <td>content3</td>
+                <td>content4</td>
+            </tr>
+            <tr>
+                <td>content1</td>
+                <td>content2</td>
+                <td>content3</td>
+                <td>content4</td>
+            </tr>
+            <tr>
+                <td>content1</td>
+                <td>content2</td>
+                <td>content3</td>
+                <td>content4</td>
+            </tr>
+        </table>
+        <table class="table table--striped">
+            <thead>
+                <tr>
+                    <th>col1</th>
+                    <th>col2</th>
+                    <th>col3</th>
+                    <th>col4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>content1</td>
+                    <td>content2</td>
+                    <td>content3</td>
+                    <td>content4</td>
+                </tr>
+                <tr>
+                    <td>content1</td>
+                    <td>content2</td>
+                    <td>content3</td>
+                    <td>content4</td>
+                </tr>
+                <tr>
+                    <td>content1</td>
+                    <td>content2</td>
+                    <td>content3</td>
+                    <td>content4</td>
+                </tr>
+                <tr>
+                    <td>content1</td>
+                    <td>content2</td>
+                    <td>content3</td>
+                    <td>content4</td>
+                </tr>
+            </tbody>
+        </table>
         <h4>With thead and tbody</h4>
-        <table>
+        <table class="table table--hover">
             <thead>
                 <tr>
                     <th>col1</th>
@@ -168,17 +236,17 @@
             <button class="btn--primary btn--ultra-large">ultra-large</button>
         </div>
         <form>
-            <div>
+            <div class="group">
                 <label for="exampleInputEmail1">Text</label>
-                <input type="text" placeholder="Email">
+                <input type="text" class="field" placeholder="Email">
             </div>
-            <div>
+            <div class="group">
                 <label for="exampleInputFile">textarea</label>
-                <textarea></textarea>
+                <textarea class="field"></textarea>
             </div>
             <div>
                 <label>select</label>
-                <select>
+                <select class="field">
                     <option value="">val1</option>
                     <option value="">val2</option>
                     <option value="">val3</option>
@@ -191,7 +259,7 @@
             </div>
             <div>
                 <label for="">search</label>
-                <input type="search">
+                <input type="search" class="field">
             </div>
 
             <fieldset>
@@ -201,7 +269,7 @@
                 <input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
             </fieldset>
               
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn--default">Submit</button>
         </form>
     </body>
 </html>

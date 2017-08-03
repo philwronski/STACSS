@@ -24,7 +24,9 @@
 @import "base"; // basic styles
 // You should uncomment this following line if you want to override STACSS print styles.
 // @import "print"; // print quick reset
+@import "tables"; // data tables consistency
 @import "buttons"; // Buttons styles
+@import "forms"; // forms consistency
 
 // Components
 // @import "components/media.scss"; // media object

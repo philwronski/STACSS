@@ -10,7 +10,7 @@ $color-danger       : #d9534f !default;
 
 // Buttons
 $btn-default-color          : $gray-light;
-$btn-default-bg             : $gray-ultra-light;
+$btn-default-bg             : $gray-extra-light;
 $btn-default-border-color   : transparent;
 
 $btn-color  : #fff;
@@ -60,3 +60,12 @@ $btn-o-warning-border-color   : $color-warning;
 $btn-o-danger-color          : $color-danger;
 $btn-o-danger-bg             : $btn-o-bg;
 $btn-o-danger-border-color   : $color-danger;
+
+// Tables
+$table-head-bg              : $gray-extra-light;
+$table-head-border-color    : $gray-lighter;
+$table-odd-bg               : $gray-ultra-light;
+$table-hover-bg             : $gray-extra-light;
+
+// Forms
+$form-group-margin-bottom   : $small-plus-spacing;

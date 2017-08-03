@@ -23,6 +23,8 @@ optgroup,
 select,
 textarea {
   color: $color-base;
+  // Permet d'éviter d'avoir un décalage de hauteur entre un input et un select.
+  line-height: 1;
 }
 
 label {

@@ -24,9 +24,9 @@ $gray-darker    : lighten($gray-base, 13.5%) !default; // #222
 $gray-dark      : lighten($gray-base, 20%) !default;   // #333
 $gray           : lighten($gray-base, 33.5%) !default; // #555
 $gray-light     : lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter   : lighten($gray-base, 73.5%) !default; // #eee
-$gray-extra-light   : lighten($gray-base, 83.5%) !default; // #eee
-$gray-ultra-light   : lighten($gray-base, 93.5%) !default; // #eee
+$gray-lighter   : lighten($gray-base, 73.5%) !default; // #d5d5d5
+$gray-extra-light   : lighten($gray-base, 93.5%) !default; // #eee
+$gray-ultra-light   : lighten($gray-base, 96.5%) !default; // #eee
 
 $bg-base        : #fff;
 $color-base     : $gray-dark;
@@ -58,8 +58,8 @@ $btn-padding-small          : 0.45em 0.6em;
 $btn-padding-large          : 1.05em 1.2em;
 $btn-font-large             : 1.8rem;
 
-$btn-padding-extra-large    : 1.15em 1.3em;
+$btn-padding-extra-large    : 1.25em 1.4em;
 $btn-font-extra-large       : 2rem;
 
-$btn-padding-ultra-large    : 1.25em 1.4em;
+$btn-padding-ultra-large    : 1.35em 1.5em;
 $btn-font-ultra-large       : 2.2rem;

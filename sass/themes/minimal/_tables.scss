@@ -1,0 +1,59 @@
+/* ----------------------------- */
+/* ==Table (Data table)          */
+/* ----------------------------- */
+
+.table {
+    thead,
+    .#{$sta-namespace}table-header {
+        background-color: $table-head-bg;
+        border-bottom: 3px solid $table-head-border-color;
+    }
+
+    tr,
+    .#{$sta-namespace}table-row  {
+        border-bottom: 1px solid $table-head-border-color;
+    }
+
+    tfoot,
+    .#{$sta-namespace}table-footer {
+        background-color: $table-head-bg;
+        border-top: 3px solid $table-head-border-color;
+    }
+}
+
+.table--bordered {
+    border: 1px solid $table-head-border-color;
+    
+    tr,
+    .table-row {
+        td:not(:first-child),
+        th:not(:first-child),
+        .table-cell:not(:first-child) {
+            border-left: 1px solid $table-head-border-color;
+        }
+    }
+}
+
+.table--striped {
+    tbody {
+        tr:nth-child(even)  {
+            background-color: $table-odd-bg;        
+        }
+    }
+
+    .table-row:nth-child(even) {
+        background-color: $table-odd-bg;        
+    }
+}
+
+.table--hover {
+    tbody {
+        tr:hover {
+            background-color: $table-hover-bg;
+        }
+    }
+
+    .table-row:hover {
+        background-color: $table-hover-bg;
+    }
+}
